@@ -1,0 +1,14 @@
+apiVersion: flightctl.io/v1alpha1
+kind: Fleet
+spec:
+  selector:
+    matchLabels:
+      env: kiosk
+      provider: git
+  template:
+    metadata:
+      labels:
+        fleet: git-demo-fleet
+    spec:
+      applications: []
+      config: []
